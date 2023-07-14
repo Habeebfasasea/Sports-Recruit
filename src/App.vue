@@ -14,6 +14,9 @@ export default {
   components: {
     AcademicFitReport
   },
+  mounted() {
+    this.$store.commit('setReport', AthleteData.data[0]);
+  },
   data: function() {
     return {
       athlete_info: AthleteData.data[0]
